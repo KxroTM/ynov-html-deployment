@@ -1,4 +1,4 @@
-bash```
+```bash
 pipeline {
     agent any
     stages {
