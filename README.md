@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloner le dépôt GitHub') {
             steps {
-                git 'https://github.com/<votre-utilisateur>/ynov-html-deployment.git'
+                git branch: 'main', url: 'https://github.com/<votre-utilisateur>/ynov-html-deployment.git'
             }
         }
         stage('Déployer sur test.ynov.local') {
@@ -32,4 +32,5 @@ pipeline {
         }
     }
 }
+
 ```
